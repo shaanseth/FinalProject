@@ -36,11 +36,5 @@ $(document).ready(function() {
       $(".adviceheading").append(advice)
     })
   })
-
-
-
-
-
-
-
+  
 });
