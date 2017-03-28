@@ -1,9 +1,10 @@
 header {
   font-family: 'Limelight';
-  font-size: 110px;
+  font-size: 90px;
   background-color: gold;
   text-align: center;
   width: auto;
+  padding: 0 0.5em;
 }
 
 .bestbigly {
@@ -36,12 +37,17 @@ header {
   padding-top: 30px;
   padding-right: 15px;
   padding-left: 0px;
+  -webkit-animation-delay: 4s;
 }
 
 .hair {
   width: 30%;
   height: 30%;
   padding: 30px 20px 0px 0px;
+  -webkit-animation-delay: 2s;
+  /*-webkit-animation-duration: 10s;
+  -moz-animation-duration: 10s;
+  -o-animation-duration: 10s;*/
 }
 
 /*feelings styling*/
@@ -61,28 +67,141 @@ header {
 }
 
 .feelings {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
 /*feelings pix styling*/
+
+.pix1 {
+  position: relative;
+  cursor: pointer;
+}
+
 .anxious {
-  width: 25%;
+  width: 100%;
   height: 400px;
-  border: solid black 3px;
+  border: solid black 3px;opacity: 1;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+.anxiousText {
+  height: 150px;
+  position: absolute;
+  top: 250px;
+  left: 10px;
+  width: 100%;
+  font-family: "Permanent Marker", cursive;
+  font-size: 45px;
+  color: FireBrick;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+.pix1:hover .anxiousText{
+  display: block;
+  opacity: 1;
+}
+
+.pix1:hover .anxious{
+  opacity: 0.4;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.pix2 {
+    position: relative;
+    cursor: pointer;
 }
 
 .bored {
-  width: 25%;
+  width: 100%;
   height: 400px;
   border: solid black 3px;
+  opacity: 1;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+.boredText {
+  position: absolute;
+  top: 250px;
+  left: 10px;
+  width: 100%;
+  font-size: 45px;
+  font-family: "Permanent Marker", cursive;
+  color: FireBrick;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+.pix2:hover .boredText{
+  display: block;
+  opacity: 1;
+}
+
+.pix2:hover .bored{
+  opacity: 0.4;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.pix3 {
+    position: relative;
+    cursor: pointer;
 }
 
 .overwhelmed {
-  width: 25%;
+  width: 100%;
   height: 400px;
   border: solid black 3px;
+  opacity: 1;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+.overwhelmedText {
+  position: absolute;
+  top: 250px;
+  left: 10px;
+  width: 100%;
+  font-size: 45px;
+  font-family: "Permanent Marker", cursive;
+  color: FireBrick;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+.pix3:hover .overwhelmedText{
+  display: block;
+  opacity: 1;
+}
+
+.pix3:hover .overwhelmed{
+  opacity: 0.4;
+  -webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	transform: scale(1.2);
 }
 
 /*context styling*/
@@ -101,7 +220,7 @@ header {
 }
 
 #context {
-  width: 50%;
+  width: 60%;
   height: 50px;
   align-self: center;
   border: solid red 2px;
